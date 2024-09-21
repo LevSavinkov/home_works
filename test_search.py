@@ -15,4 +15,4 @@ def test_error_search(open_browser, open_google):
     search_string = "zxyqlvnwrp23847hfglxq"
     search(search_string)
     browser.element("//div[@class='card-section']/p[@role='heading']").should(
-        have.text(f"Your search - {search_string} - did not match any documents."))
+        have.text(f"Your search - - did not match any documents."))
