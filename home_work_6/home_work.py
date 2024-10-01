@@ -66,12 +66,11 @@ def test_find_suitable_user():
     
     # TODO найдите всех пользователей младше 20 лет
     suitable_users = list(filter(lambda u: u["age"] < 20, users))
-
+    
     assert suitable_users == [
         {"name": "Stanislav", "age": 15},
         {"name": "Maria", "age": 18},
     ]
-    
 
 
 # Сделайте функцию, которая будет печатать
@@ -89,7 +88,8 @@ def transformation_name(func, *args):
     # мне понравился больше вариант с большой буквой в начале строки, чем в каждом слове
     # t = [i.capitalize() for i in func.__name__.split("_")] // вариант что бы в каждом слове была 1ая заглавная
     return " ".join(t) + f" [{", ".join(args)}]"
-    
+
+
 def test_readable_function():
     open_browser(browser_name="Chrome")
     go_to_companyname_homepage(page_url="https://companyname.com")
